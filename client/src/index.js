@@ -5,9 +5,9 @@ import { createStore, applyMiddleware, compose } from "redux";
 import thunk from "redux-thunk";
 import { composeWithDevTools } from "redux-devtools-extension";
 
-import App from "./App";
-import ThemeWrapper from "./ThemeWrapper";
-import reducers from "./redux/reducers";
+import App from "App";
+import ThemeWrapper from "ThemeWrapper";
+import reducers from "redux/reducers";
 
 ReactDOM.render(
   <Provider

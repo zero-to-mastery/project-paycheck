@@ -1,20 +1,17 @@
 {
-  "name": "project-paycheck",
-  "version": "0.0.0",
-  "private": true,
+  "name": "project_paycheck",
+  "version": "1.0.0",
+  "description": "a paycheck-to-paycheck breakdown of income and expenses",
+  "main": "index.js",
   "scripts": {
-    "start": "node ./bin/www"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "cd server && npm start",
+    "client": "cd client && npm start"
   },
-  "dependencies": {
-    "cookie-parser": "~1.4.4",
-    "debug": "~2.6.9",
-    "express": "~4.16.1",
-    "helmet": "^3.18.0",
-    "mongoose": "^5.6.4",
-    "morgan": "~1.9.1"
+  "repository": {
+    "type": "git",
+    "url": ""
   },
-  "devDependencies": {
-    "dotenv": "^8.0.0",
-    "prettier": "1.18.2"
-  }
+  "author": "",
+  "license": ""
 }

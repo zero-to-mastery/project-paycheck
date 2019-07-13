@@ -22,9 +22,10 @@ mongoose.Promise = global.Promise;
 mongoose
   .connect(databaseUrl, { useNewUrlParser: true })
   .then(() => console.log("Connected to the database"))
-  .catch(err =>
-    console.log(`Could not connect to the database: ${err.message}`)
-  );
+  .catch(err => {
+    console.log(`Could not connect to the database: ${err.message}`);
+    process.exit();
+  });
 
 app.use("/", indexRouter);
 
