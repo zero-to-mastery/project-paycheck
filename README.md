@@ -1,6 +1,6 @@
 # project_paycheck
 
-a paycheck-to-paycheck breakdown tool of income and expenses
+a paycheck-to-paycheck breakdown of income and expenses
 
 ## Tech-stack
 
@@ -13,8 +13,7 @@ a paycheck-to-paycheck breakdown tool of income and expenses
 
 ## Description
 
-Tool to budget and plan your next few paychecks. The idea is to give a better
-understanding of where their money is needed for those who live paycheck to paycheck.
+Project Paycheck is a tool for people to plan and have a better understanding of their finances. It'll have a breakdown of incomes and expenses for the next few paychecks, this'll allow users to see where their money is being spent for the next paycheck, Enabling the user to make informed spending decisions.
 
 Will have two main views:
 
@@ -44,5 +43,8 @@ Will have two main views:
 
 ## Notes:
 
+- If you have any questions, contact Erik on Discord or at dichotomyydev@gmail.com
 - Make sure to have the Prettier extension installed so that your code will autoformat accorrding to the config file
 - Make sure to have MongoDB installed locally or add your own URL to the connect function. Please leave the default connect function when submitting a PR
+- Please keep PRs small so that code reviews will be managable
+- For overview of the Git workflow, read this article https://medium.com/@francesco.agnoletto/how-to-not-f-up-your-local-files-with-git-part-1-e0756c88fd3c
