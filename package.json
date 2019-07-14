@@ -3,10 +3,16 @@
   "version": "1.0.0",
   "description": "a paycheck-to-paycheck breakdown of income and expenses",
   "main": "index.js",
+  "engines": {
+    "node": "11.14.0",
+    "npm": "6.7.0"
+  },
   "scripts": {
+    "start": "cd server && npm start",
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "cd server && npm start",
-    "client": "cd client && npm start"
+    "client": "cd client && npm start",
+    "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "repository": {
     "type": "git",
