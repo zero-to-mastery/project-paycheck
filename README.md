@@ -4,10 +4,9 @@ a paycheck-to-paycheck breakdown of income and expenses
 
 ## Tech-stack
 
-- React
-- Redux
+- React / Redux
 - Node / Express
-- MongoDB
+- MongoDB / Mongoose
 - PM2
 - Material UI
 
@@ -43,8 +42,20 @@ Will have two main views:
 
 ## Notes:
 
-- If you have any questions, contact Erik on Discord or at dichotomyydev@gmail.com
+- If you have any questions, contact Erik (Dichotomyy#0011) on Discord
 - Make sure to have the Prettier extension installed so that your code will autoformat accorrding to the config file
 - Make sure to have MongoDB installed locally or add your own URL to the connect function. Please leave the default connect function when submitting a PR
 - Please keep PRs small so that code reviews will be managable
-- For overview of the Git workflow, read this article https://medium.com/@francesco.agnoletto/how-to-not-f-up-your-local-files-with-git-part-1-e0756c88fd3c
+
+## Helpful Reading List:
+
+- [How to use Git with a team](https://medium.com/@francesco.agnoletto/how-to-not-f-up-your-local-files-with-git-part-1-e0756c88fd3c)
+- [Rules of React](https://gist.github.com/sebmarkbage/75f0838967cd003cd7f9ab938eb1958f)
+- [React, Redux and JS Architecture](https://jrsinclair.com/articles/2018/react-redux-javascript-architecture/)
+- [Redux Tutorial](https://egghead.io/courses/getting-started-with-redux)
+- [React Router](https://reacttraining.com/react-router/web/guides/philosophy)
+- [React DOCs](https://reactjs.org/docs/getting-started.html)
+- [Create-React-App DOCs](https://facebook.github.io/create-react-app/docs/getting-started)
+- [React-Router DOCs](https://reacttraining.com/react-router/web/guides/quick-start)
+- [Redux DOCs](https://redux.js.org/introduction/getting-started)
+- [React-Redux DOCs](https://react-redux.js.org/introduction/quick-start)
