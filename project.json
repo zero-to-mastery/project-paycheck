@@ -3,7 +3,7 @@
   "tagline": "A paycheck-to-paycheck breakdown of income and expenses",
   "color": "#cf48ff",
   "logo": "",
-  "channelName": "projectpaycheck",
+  "channelName": "project-paycheck",
   "desc": [
     "Project Paycheck is a tool for people to plan and have a better understanding of their finances. It'll have a breakdown of incomes and expenses for the next few paychecks, this'll allow users to see where their money is being spent for the next paycheck, Enabling the user to make informed spending decisions.",
     "__**Tech Stack**__\n:small_blue_diamond: React / Redux\n:small_blue_diamond: Node / Express\n:small_blue_diamond: MongoDB / Mongoose\n:small_blue_diamond: PM2\n:small_blue_diamond: Material-UI\n"
