@@ -1,0 +1,25 @@
+{
+  "contributors": [
+    {
+      "name": "Erik Herbranson",
+      "desired-role": "fullstack",
+      "skills": [
+        "React",
+        "Redux",
+        "Material-UI",
+        "Node",
+        "Express",
+        "MongoDB",
+        "Mongoose",
+        "CouchDB",
+        "Elasticsearch",
+        "MySQL",
+        "PostgreSQL",
+        "Python",
+        "Flask",
+        "Java",
+        "Spring"
+      ]
+    }
+  ]
+}
