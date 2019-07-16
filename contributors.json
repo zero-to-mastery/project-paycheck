@@ -53,6 +53,24 @@
         "Flask",
         "Java"
       ]
+    },
+    {
+      "discord-name": "codepapi",
+      "trello-name": "Aaron Massey",
+      "desired-role": "Full Stack",
+      "skills": [
+        "React",
+        "Redux",
+        "Bootstrap",
+        "Material-UI",
+        "GraphQL Apollo Client",
+        "Node",
+        "Express",
+        "MongoDB",
+        "Mongoose",
+        "Mocha",
+        "Chai"
+      ]
     }
   ]
 }
