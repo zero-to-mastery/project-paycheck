@@ -21,6 +21,22 @@
         "Java",
         "Spring"
       ]
+    },
+    {
+      "discord-name": "garosan",
+      "trello-name": "Edgar Sánchez",
+      "desired-role": "fullstack",
+      "skills": [
+        "React",
+        "Redux",
+        "Material-UI",
+        "Node",
+        "Express",
+        "MongoDB",
+        "Mongoose",
+        "Python",
+        "AWS"
+      ]
     }
   ]
 }
