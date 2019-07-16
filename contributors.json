@@ -39,7 +39,23 @@
       ]
     },
     {
-      "discord-name": "Bhavan",
+      "discord-name": "Pablo Peña",
+      "trello-name": "Pablo Peña",
+      "desired-role": "backend",
+      "skills": [
+        "Node",
+        "Express",
+        "MongoDB",
+        "Mongoose",
+        "Apollo-Server",
+        "PostgreSQL",
+        "Python",
+        "Flask",
+        "Java"
+      ]
+    },
+    {
+    "discord-name": "Bhavan",
       "trello-name": "Bhavan Channira",
       "desired-role": "frontend",
       "skills": [
