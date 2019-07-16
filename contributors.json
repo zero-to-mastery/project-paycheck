@@ -53,6 +53,20 @@
         "Flask",
         "Java"
       ]
+    },
+    {
+    "discord-name": "Bhavan",
+      "trello-name": "Bhavan Channira",
+      "desired-role": "frontend",
+      "skills": [
+        "React",
+        "jQuery",
+        "Bootstrap",
+        "MongoDB",
+        "Java",
+        "Spring",
+        "SQL Server"
+      ]
     }
   ]
 }
