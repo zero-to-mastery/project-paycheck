@@ -1,7 +1,8 @@
 {
   "contributors": [
     {
-      "name": "Erik Herbranson",
+      "discord-name": "Erik Herbranson",
+      "trello-name": "Erik Herbranson",
       "desired-role": "fullstack",
       "skills": [
         "React",
