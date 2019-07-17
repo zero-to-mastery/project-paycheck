@@ -101,6 +101,20 @@
         "Docker",
         "Kubernetes"
       ]
+    },
+    {
+      "discord-name": "diegchav",
+      "trello-name": "Diego Chávez",
+      "desired-role": "fullstack",
+      "skills": [
+        "React",
+        "Redux",
+        "Node",
+        "Express",
+        "MongoDB",
+        "Mongoose",
+        "Python"
+      ]
     }
   ]
 }
