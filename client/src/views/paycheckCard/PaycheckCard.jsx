@@ -21,6 +21,9 @@ const useStyles = makeStyles(theme => ({
   },
   cardContent: {
     marginLeft: "12%"
+  },
+  expensePaid: {
+    textDecoration: "line-through"
   }
 }));
 export const PaycheckCard = ({
@@ -34,7 +37,7 @@ export const PaycheckCard = ({
 
   const parseDate = dateToParse => `${dateToParse.getMonth()}/ ${dateToParse.getDay()}`;
   const totalExpenses = expenses.reduce((accumulator, { value }) => accumulator + value, 0);
-  const totalDebtPaid = debtPaid.reduce((accumulator, { value }) => accumulator + value, 0);
+  const totalDebtPaid = debtPaid.reduce((accumulator, { amount }) => accumulator + amount, 0);
 
   return (
     date > new Date() && (
@@ -44,11 +47,14 @@ export const PaycheckCard = ({
           <Typography>{`Total income: ${income}`}</Typography>
           <List>
             <Typography>{`Total expenses: ${totalExpenses}`}</Typography>
-            {expenses.map((expense, index) => (
-              <ListItemText key={index} className={classes.listItem}>{`${expense.description}: ${
-                expense.value
-              }`}</ListItemText>
-            ))}
+            {expenses.map((expense, index) => {
+              const paidClass = expense.paid ? classes.expensePaid : "";
+              return (
+                <ListItemText key={index} className={`${classes.listItem} ${paidClass}`}>{`${
+                  expense.description
+                }: ${expense.value}`}</ListItemText>
+              );
+            })}
           </List>
           <List>
             <Typography>{`Debt Paid: ${totalDebtPaid}`}</Typography>
@@ -67,7 +73,9 @@ PaycheckCard.propTypes = {
   expenses: PropTypes.arrayOf(
     PropTypes.shape({
       description: PropTypes.string.isRequired,
-      value: PropTypes.number.isRequired
+      value: PropTypes.number.isRequired,
+      createdAt: PropTypes.instanceOf(Date).isRequired,
+      paid: PropTypes.bool.isRequired
     })
   ).isRequired,
   debtPaid: PropTypes.arrayOf(
