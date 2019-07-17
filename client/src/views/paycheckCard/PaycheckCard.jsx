@@ -23,7 +23,6 @@ const useStyles = makeStyles(theme => ({
     marginLeft: "12%"
   }
 }));
-
 export const PaycheckCard = ({
   date,
   expenses = [],
@@ -33,31 +32,35 @@ export const PaycheckCard = ({
 }) => {
   const classes = useStyles();
 
+  const parseDate = dateToParse => `${dateToParse.getMonth()}/ ${dateToParse.getDay()}`;
   const totalExpenses = expenses.reduce((accumulator, { value }) => accumulator + value, 0);
   const totalDebtPaid = debtPaid.reduce((accumulator, { value }) => accumulator + value, 0);
+
   return (
-    <Card className={classes.card}>
-      <CardHeader title={`Paycheck ${date}`} className={classes.header} />
-      <CardContent className={classes.cardContent}>
-        <Typography>{`Total income: ${income}`}</Typography>
-        <List>
-          <Typography>{`Total expenses: ${totalExpenses}`}</Typography>
-          {expenses.map((expense, index) => (
-            <ListItemText key={index} className={classes.listItem}>{`${expense.description}: ${
-              expense.value
-            }`}</ListItemText>
-          ))}
-        </List>
-        <List>
-          <Typography>{`Debt Paid: ${totalDebtPaid}`}</Typography>
-          {debtPaid.map((debt, index) => (
-            <ListItemText key={index + debt.description} className={classes.listItem}>{`${
-              debt.description
-            }: ${debt.amount}`}</ListItemText>
-          ))}
-        </List>
-      </CardContent>
-    </Card>
+    date > new Date() && (
+      <Card className={classes.card}>
+        <CardHeader title={`Paycheck ${parseDate(date)}`} className={classes.header} />
+        <CardContent className={classes.cardContent}>
+          <Typography>{`Total income: ${income}`}</Typography>
+          <List>
+            <Typography>{`Total expenses: ${totalExpenses}`}</Typography>
+            {expenses.map((expense, index) => (
+              <ListItemText key={index} className={classes.listItem}>{`${expense.description}: ${
+                expense.value
+              }`}</ListItemText>
+            ))}
+          </List>
+          <List>
+            <Typography>{`Debt Paid: ${totalDebtPaid}`}</Typography>
+            {debtPaid.map((debt, index) => (
+              <ListItemText key={index + debt.description} className={classes.listItem}>{`${
+                debt.description
+              }: ${debt.amount}`}</ListItemText>
+            ))}
+          </List>
+        </CardContent>
+      </Card>
+    )
   );
 };
 PaycheckCard.propTypes = {
@@ -73,7 +76,7 @@ PaycheckCard.propTypes = {
       amount: PropTypes.number.isRequired
     })
   ).isRequired,
-  date: PropTypes.string.isRequired,
+  date: PropTypes.instanceOf(Date),
   income: PropTypes.number.isRequired
 };
 export default PaycheckCard;
