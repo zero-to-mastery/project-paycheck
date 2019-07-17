@@ -85,6 +85,22 @@
         "Spring",
         "SQL Server"
       ]
+    },
+     {
+      "discord-name": "ILivS",
+      "trello-name": "Hugh Do",
+      "desired-role": "fullstack",
+      "skills": [
+        "React",
+        "Redux",
+        "Node",
+        "Express",
+        "MongoDB",
+        "Mongoose",
+        "Python",
+        "Docker",
+        "Kubernetes"
+      ]
     }
   ]
 }
