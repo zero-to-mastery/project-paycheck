@@ -55,7 +55,25 @@
       ]
     },
     {
-    "discord-name": "Bhavan",
+      "discord-name": "codepapi",
+      "trello-name": "Aaron Massey",
+      "desired-role": "Full Stack",
+      "skills": [
+        "React",
+        "Redux",
+        "Bootstrap",
+        "Material-UI",
+        "GraphQL Apollo Client",
+        "Node",
+        "Express",
+        "MongoDB",
+        "Mongoose",
+        "Mocha",
+        "Chai"
+      ]
+    },
+    {
+      "discord-name": "Bhavan",
       "trello-name": "Bhavan Channira",
       "desired-role": "frontend",
       "skills": [
