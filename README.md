@@ -43,7 +43,7 @@ Will have two main views:
 ## Notes:
 
 - If you have any questions, contact Erik (Dichotomyy#0011) on Discord
-- Make sure to have the Prettier extension installed so that your code will autoformat accorrding to the config file
+- Make sure to have the Prettier extension installed so that your code will autoformat according to the config file
 - Make sure to have MongoDB installed locally or add your own URL to the connect function. Please leave the default connect function when submitting a PR
 - Please keep PRs small so that code reviews will be managable
 
