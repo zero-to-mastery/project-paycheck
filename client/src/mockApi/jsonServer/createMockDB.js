@@ -5,7 +5,7 @@ const times = 10;
 
 // declare collections here
 const expenses = [];
-
+const debt = [];
 // generate fake data inside the loop
 // this is an old fashion for loop but the alternatives using
 // ES6 I think are to complex
@@ -18,9 +18,13 @@ for (let i = 0; i < times; i++) {
     createdAt: faker.date.future(),
     paid: faker.random.boolean()
   });
+  debt.push({
+    description: faker.random.word(),
+    amount: faker.random.number(400)
+  });
 }
 // Add collectiont to fake db
-const data = JSON.stringify({ expenses });
+const data = JSON.stringify({ expenses, debt });
 const filepath = path.join(__dirname, "db.json");
 
 fs.writeFile(filepath, data, function(err) {
