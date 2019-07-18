@@ -1,6 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const faker = require("faker");
+const moment = require("moment");
 const times = 10;
 
 // declare collections here
@@ -15,7 +16,7 @@ for (let i = 0; i < times; i++) {
     id: i + faker.random.alphaNumeric(),
     description: faker.commerce.productName(),
     value: faker.commerce.price(),
-    createdAt: faker.date.future(),
+    createdAt: moment(faker.date.between(moment(), moment().add(25, "d"))).valueOf(),
     paid: faker.random.boolean()
   });
   debt.push({
