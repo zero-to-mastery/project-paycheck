@@ -12,7 +12,6 @@ export const getExpenses = async () => {
   }
 };
 export const saveExpenseApi = async expense => {
-  console.log(`expenseapi: ${expense.id ? "PUT" : "POST"}`);
   try {
     fetch(url + (expense.id || ""), {
       method: expense.id ? "PUT" : "POST", // POST for create, PUT to update when id already exists.

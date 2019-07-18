@@ -11,7 +11,7 @@ export const getDebts = async () => {
     return handleError(error);
   }
 };
-export const saveExpenseApi = async debt => {
+export const saveDebtApi = async debt => {
   try {
     fetch(url + (debt.id || ""), {
       method: debt.id ? "PUT" : "POST", // POST for create, PUT to update when id already exists.
@@ -24,4 +24,4 @@ export const saveExpenseApi = async debt => {
   }
 };
 
-export default getdebts;
+export default getDebts;
