@@ -9,7 +9,8 @@ import List from "@material-ui/core/List";
 import ListItemText from "@material-ui/core/ListItemText";
 import PropTypes from "prop-types";
 import { fetchExpenses, saveExpense } from "../../redux/actions/expenses";
-import { fetchDebts, saveDebt } from "../../redux/actions/debt";
+import { fetchDebts } from "../../redux/actions/debt";
+import moment from "moment";
 // Styles
 const useStyles = makeStyles(theme => ({
   card: {
@@ -30,13 +31,12 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 export const PaycheckCard = ({
-  date = new Date(),
+  date = moment().valueOf(),
   expenses = [],
   debt = [],
   fetchExpenses,
   saveExpense,
-  fetchDebts,
-  saveDebt
+  fetchDebts
 }) => {
   const classes = useStyles();
   // This income should be in the globalState
@@ -46,7 +46,7 @@ export const PaycheckCard = ({
     fetchDebts();
   }, [fetchExpenses, fetchDebts]);
 
-  const parseDate = dateToParse => `${dateToParse.getMonth()}/ ${dateToParse.getDay()}`;
+  const parseDate = dateToParse => `${moment(dateToParse).month()}/ ${moment(dateToParse).day()}`;
   const totalExpenses = expenses.reduce(
     (accumulator, { value, paid }) => (paid ? accumulator : accumulator + value),
     0
@@ -66,6 +66,12 @@ export const PaycheckCard = ({
       }
     }
   };
+  // mimic paycheck dates
+  const thisPayCheck = moment().valueOf();
+  const nextPayCheck = moment()
+    .add(15, "d")
+    .valueOf();
+
   return (
     /*date > new Date() &&*/ <Card className={classes.card}>
       <CardHeader title={`Paycheck ${parseDate(date)}`} className={classes.header} />
@@ -73,16 +79,18 @@ export const PaycheckCard = ({
         <Typography>{`Total income: ${income}`}</Typography>
         <List>
           <Typography>{`Total expenses: ${totalExpenses}`}</Typography>
-          {expenses.map((expense, index) => {
-            const paidClass = expense.paid ? classes.expensePaid : "";
-            return (
-              <ListItemText
-                key={index}
-                className={`${classes.listItem} ${paidClass}`}
-                onClick={event => handleToggleExpense(event, expense.id)}
-              >{`${expense.description}: ${expense.value}`}</ListItemText>
-            );
-          })}
+          {expenses
+            .filter(expense => expense.createdAt > thisPayCheck && expense.createdAt < nextPayCheck)
+            .map((expense, index) => {
+              const paidClass = expense.paid ? classes.expensePaid : "";
+              return (
+                <ListItemText
+                  key={index}
+                  className={`${classes.listItem} ${paidClass}`}
+                  onClick={event => handleToggleExpense(event, expense.id)}
+                >{`${expense.description}: ${expense.value}`}</ListItemText>
+              );
+            })}
         </List>
         <List>
           <Typography>{`Debt Paid: ${totalDebtPaid}`}</Typography>
@@ -96,32 +104,32 @@ export const PaycheckCard = ({
     </Card>
   );
 };
+// Type  checking
 PaycheckCard.propTypes = {
   expenses: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.number.isRequired,
+      id: PropTypes.string.isRequired,
       description: PropTypes.string.isRequired,
       value: PropTypes.number.isRequired,
-      createdAt: PropTypes.instanceOf(Date).isRequired,
+      createdAt: PropTypes.number.isRequired,
       paid: PropTypes.bool.isRequired
     })
   ).isRequired,
-  debtPaid: PropTypes.arrayOf(
+  debt: PropTypes.arrayOf(
     PropTypes.shape({
       description: PropTypes.string.isRequired,
       amount: PropTypes.number.isRequired
     })
   ).isRequired,
-  date: PropTypes.instanceOf(Date),
+  date: PropTypes.number.isRequired,
   income: PropTypes.number.isRequired
 };
-
+// connect to store
 const mapStateToProps = state => ({ expenses: state.expenses, debt: state.debt });
 const mapDispatchToProps = {
   fetchExpenses,
   saveExpense,
-  fetchDebts,
-  saveDebt
+  fetchDebts
 };
 export default connect(
   mapStateToProps,
