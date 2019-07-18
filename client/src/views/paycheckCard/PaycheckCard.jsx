@@ -39,6 +39,17 @@ export const PaycheckCard = ({
   const totalExpenses = expenses.reduce((accumulator, { value }) => accumulator + value, 0);
   const totalDebtPaid = debtPaid.reduce((accumulator, { amount }) => accumulator + amount, 0);
 
+  const handleToggleExpense = (event, id) => {
+    const expense = expenses.find(exp => exp.id === id);
+    if (expense !== undefined) {
+      // subtract or add from the totalIncome
+      // should dispatch corresponding actions
+      expense.paid ? (totalIncome += expense.value) : (totalIncome -= expense.value);
+      expense.paid = !expense.paid;
+    } else {
+      console.error(`Product with id: ${id} not found`);
+    }
+  };
   return (
     date > new Date() && (
       <Card className={classes.card}>
@@ -50,9 +61,11 @@ export const PaycheckCard = ({
             {expenses.map((expense, index) => {
               const paidClass = expense.paid ? classes.expensePaid : "";
               return (
-                <ListItemText key={index} className={`${classes.listItem} ${paidClass}`}>{`${
-                  expense.description
-                }: ${expense.value}`}</ListItemText>
+                <ListItemText
+                  key={index}
+                  className={`${classes.listItem} ${paidClass}`}
+                  onClick={event => handleToggleExpense(event, expense.id)}
+                >{`${expense.description}: ${expense.value}`}</ListItemText>
               );
             })}
           </List>
@@ -72,6 +85,7 @@ export const PaycheckCard = ({
 PaycheckCard.propTypes = {
   expenses: PropTypes.arrayOf(
     PropTypes.shape({
+      id: PropTypes.number.isRequired,
       description: PropTypes.string.isRequired,
       value: PropTypes.number.isRequired,
       createdAt: PropTypes.instanceOf(Date).isRequired,
