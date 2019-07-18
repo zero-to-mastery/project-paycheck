@@ -12,13 +12,14 @@ const debt = [];
 for (let i = 0; i < times; i++) {
   // generate fake expenses
   expenses.push({
-    id: i,
+    id: i + faker.random.alphaNumeric(),
     description: faker.commerce.productName(),
     value: faker.commerce.price(),
     createdAt: faker.date.future(),
     paid: faker.random.boolean()
   });
   debt.push({
+    id: faker.random.alphaNumeric(),
     description: faker.random.word(),
     amount: faker.random.number(400)
   });
