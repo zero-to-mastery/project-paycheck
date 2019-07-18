@@ -115,6 +115,30 @@
         "Mongoose",
         "Python"
       ]
-    }
+    },
+    {
+      "discord-name": "Messi",
+      "trello-name": "Messi",
+      "desired-role": "fullstack",
+      "skills": [
+        "Angular",
+        "React",
+        "Redux",
+        "Material-UI",
+        "Node",
+        "Express",
+        "MongoDB",
+        "Mongoose",
+        "MySQL",
+        "Oracle",
+        "Java",
+        "Spring",
+        "Hibernate",
+        "REST web services",
+        "Docker",
+        "Kubernetes",
+        "AWS"
+      ]
+    },
   ]
 }
