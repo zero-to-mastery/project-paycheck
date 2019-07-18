@@ -9,6 +9,7 @@ import List from "@material-ui/core/List";
 import ListItemText from "@material-ui/core/ListItemText";
 import PropTypes from "prop-types";
 import { fetchExpenses, saveExpense } from "../../redux/actions/expenses";
+import { fetchDebts, saveDebt } from "../../redux/actions/debt";
 // Styles
 const useStyles = makeStyles(theme => ({
   card: {
@@ -31,23 +32,26 @@ const useStyles = makeStyles(theme => ({
 export const PaycheckCard = ({
   date = new Date(),
   expenses = [],
-  debtPaid = [],
+  debt = [],
   fetchExpenses,
-  saveExpense
+  saveExpense,
+  fetchDebts,
+  saveDebt
 }) => {
   const classes = useStyles();
   // This income should be in the globalState
   const [income, setIncome] = useState(1000);
   useEffect(() => {
     fetchExpenses();
-  }, [fetchExpenses]);
+    fetchDebts();
+  }, [fetchExpenses, fetchDebts]);
 
   const parseDate = dateToParse => `${dateToParse.getMonth()}/ ${dateToParse.getDay()}`;
   const totalExpenses = expenses.reduce(
     (accumulator, { value, paid }) => (paid ? accumulator : accumulator + value),
     0
   );
-  const totalDebtPaid = debtPaid.reduce((accumulator, { amount }) => accumulator + amount, 0);
+  const totalDebtPaid = debt.reduce((accumulator, { amount }) => accumulator + amount, 0);
 
   const handleToggleExpense = async (event, id) => {
     const expense = expenses.find(exp => exp.id === id);
@@ -82,7 +86,7 @@ export const PaycheckCard = ({
         </List>
         <List>
           <Typography>{`Debt Paid: ${totalDebtPaid}`}</Typography>
-          {debtPaid.map((debt, index) => (
+          {debt.map((debt, index) => (
             <ListItemText key={index + debt.description} className={classes.listItem}>{`${
               debt.description
             }: ${debt.amount}`}</ListItemText>
@@ -112,10 +116,12 @@ PaycheckCard.propTypes = {
   income: PropTypes.number.isRequired
 };
 
-const mapStateToProps = state => ({ expenses: state.expenses });
+const mapStateToProps = state => ({ expenses: state.expenses, debt: state.debt });
 const mapDispatchToProps = {
   fetchExpenses,
-  saveExpense
+  saveExpense,
+  fetchDebts,
+  saveDebt
 };
 export default connect(
   mapStateToProps,
