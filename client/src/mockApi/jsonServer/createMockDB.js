@@ -7,9 +7,8 @@ const times = 10;
 // declare collections here
 const expenses = [];
 const debt = [];
+
 // generate fake data inside the loop
-// this is an old fashion for loop but the alternatives using
-// ES6 I think are to complex
 for (let i = 0; i < times; i++) {
   // generate fake expenses
   expenses.push({
