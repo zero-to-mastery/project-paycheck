@@ -11,9 +11,16 @@ export default {
     {
       // id: String,
       // description: String,
-      // value: String,
+      // value: Number,
       // createdAt: Date,
       // paid: Boolean
+    }
+  ],
+  debt: [
+    {
+      // id: String,
+      // description: String,
+      // value: Number,
     }
   ]
 };
