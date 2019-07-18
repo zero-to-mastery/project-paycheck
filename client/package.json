@@ -16,7 +16,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prestart:api": "node src/mockApi/jsonServer/createMockDB.js",
+    "start:api": "node src/mockApi/jsonServer/server.js"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -35,6 +37,8 @@
   },
   "proxy": "http://localhost:5000",
   "devDependencies": {
-    "redux-devtools-extension": "^2.13.8"
+    "redux-devtools-extension": "^2.13.8",
+    "faker": "^4.1.0",
+    "json-server": "^0.15.0"
   }
 }
