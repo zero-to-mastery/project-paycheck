@@ -1,6 +1,5 @@
 import { handleError, handleResponse } from "./apiHelpers";
 
-// we should use .env variables for constants and keys
 const url = process.env.REACT_APP_URL_API + "/expenses/";
 
 export const getExpenses = async () => {
