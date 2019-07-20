@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { connect } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardHeader from "@material-ui/core/CardHeader";
@@ -30,22 +30,23 @@ const useStyles = makeStyles(theme => ({
     textDecoration: "line-through"
   }
 }));
-export const PaycheckCard = ({
-  date = moment().valueOf(),
-  expenses = [],
-  debt = [],
-  fetchExpenses,
-  saveExpense,
-  fetchDebts
-}) => {
+export const PaycheckCard = ({ date = moment().valueOf() }) => {
   const classes = useStyles();
+
+  // react-redux hooks
+  const { expenses, debt } = useSelector(state => ({
+    expenses: state.expenses,
+    debt: state.debt
+  }));
+  const dispatch = useDispatch();
+
+  // react hooks
   // This income should be in the globalState
   const [income, setIncome] = useState(1000);
   useEffect(() => {
-    fetchExpenses();
-    fetchDebts();
-  }, [fetchExpenses, fetchDebts]);
-
+    dispatch(fetchExpenses());
+    dispatch(fetchDebts());
+  }, [dispatch]);
   const parseDate = dateToParse => `${moment(dateToParse).month()}/ ${moment(dateToParse).day()}`;
   const totalExpenses = expenses.reduce(
     (accumulator, { value, paid }) => (paid ? accumulator : accumulator + value),
@@ -60,7 +61,7 @@ export const PaycheckCard = ({
       // should dispatch corresponding actions
       expense.paid ? setIncome(income + expense.value) : setIncome(income - expense.value);
       try {
-        await saveExpense({ ...expense, paid: !expense.paid });
+        await dispatch(saveExpense({ ...expense, paid: !expense.paid }));
       } catch (error) {
         console.error(`error saving expense ${error} `);
       }
@@ -73,7 +74,7 @@ export const PaycheckCard = ({
     .valueOf();
 
   return (
-    /*date > new Date() &&*/ <Card className={classes.card}>
+    <Card className={classes.card}>
       <CardHeader title={`Paycheck ${parseDate(date)}`} className={classes.header} />
       <CardContent className={classes.cardContent}>
         <Typography>{`Total income: ${income}`}</Typography>
@@ -124,14 +125,5 @@ PaycheckCard.propTypes = {
   date: PropTypes.number.isRequired,
   income: PropTypes.number.isRequired
 };
-// connect to store
-const mapStateToProps = state => ({ expenses: state.expenses, debt: state.debt });
-const mapDispatchToProps = {
-  fetchExpenses,
-  saveExpense,
-  fetchDebts
-};
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(PaycheckCard);
+
+export default PaycheckCard;
