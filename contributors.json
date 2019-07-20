@@ -76,17 +76,9 @@
       "discord-name": "Bhavan",
       "trello-name": "Bhavan Channira",
       "desired-role": "frontend",
-      "skills": [
-        "React",
-        "jQuery",
-        "Bootstrap",
-        "MongoDB",
-        "Java",
-        "Spring",
-        "SQL Server"
-      ]
+      "skills": ["React", "jQuery", "Bootstrap", "MongoDB", "Java", "Spring", "SQL Server"]
     },
-     {
+    {
       "discord-name": "ILivS",
       "trello-name": "Hugh Do",
       "desired-role": "fullstack",
@@ -106,15 +98,7 @@
       "discord-name": "diegchav",
       "trello-name": "Diego Chávez",
       "desired-role": "fullstack",
-      "skills": [
-        "React",
-        "Redux",
-        "Node",
-        "Express",
-        "MongoDB",
-        "Mongoose",
-        "Python"
-      ]
+      "skills": ["React", "Redux", "Node", "Express", "MongoDB", "Mongoose", "Python"]
     },
     {
       "discord-name": "Messi",
@@ -139,6 +123,6 @@
         "Kubernetes",
         "AWS"
       ]
-    },
+    }
   ]
 }
