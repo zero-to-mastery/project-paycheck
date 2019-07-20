@@ -2,7 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Grid, Typography } from "@material-ui/core";
 
-import FinancialCategoryForm from "views/financial-categories/forms/financial-category-form";
+import FinancialCategoryForm from "views/financial-categories/forms/category-form";
 
 import WantsConfig from "views/financial-categories/layout/want";
 import ExpensesConfig from "views/financial-categories/layout/expense";
@@ -12,12 +12,9 @@ import IncomeConfig from "views/financial-categories/layout/income";
 
 const FORM_CONFIGS = [ExpensesConfig, IncomeConfig, DebtConfig, NeedsConfig, WantsConfig];
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles(() => ({
   root: {
     flexGrow: 1
-  },
-  control: {
-    padding: theme.spacing(2)
   }
 }));
 

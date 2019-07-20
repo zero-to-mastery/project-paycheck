@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 import { Card, CardContent, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import MaterialTable from "material-table";
@@ -71,6 +72,17 @@ const FinancialCategoryForm = ({ title, layout }) => {
       </CardContent>
     </Card>
   );
+};
+
+FinancialCategoryForm.prototypes = {
+  title: PropTypes.string.isRequired,
+  layout: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string.isRequired,
+      field: PropTypes.string.isRequired,
+      type: PropTypes.string
+    })
+  ).isRequired
 };
 
 export default FinancialCategoryForm;
