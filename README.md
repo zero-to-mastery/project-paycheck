@@ -40,6 +40,32 @@ Will have two main views:
 - I can see a breakdown of my next paycheck that will show my income for that check and all the expenses that will be paid by that check
 - I can easily edit both income and expenses
 
+## Requirements to start the server
+
+- The project is using .env file to store configuration variables. You need to rename .env-example to .env to get started.
+- Replace the values in .env with your actual values to connect to the database:
+```
+DB_USER=user
+DB_HOST=localhost:27017
+DB_PASSWORD=password
+```
+- If you are using the local database, you need to create a user in mongoDB database in order to  create a connection with authentication, for example:
+### launch mongo shell with this command in the terminal
+```
+mongo
+```
+### then create a user in the database
+```
+use projectpaycheck
+db.createUser(
+   {
+     user: "accountUser",
+     pwd: "password",
+     roles: [ "readWrite", "dbAdmin" ]
+   }
+)
+```
+
 ## Notes:
 
 - If you have any questions, contact Erik (Dichotomyy#0011) on Discord
