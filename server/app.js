@@ -1,4 +1,4 @@
-require("dotenv").config();
+if (process.env.NODE_ENV !== 'production') require("dotenv").config();
 const express = require("express");
 const path = require("path");
 const cookieParser = require("cookie-parser");
@@ -23,7 +23,7 @@ const databaseOptions = {
   user: process.env.DB_USER,
   pass: process.env.DB_PASSWORD
 };
-
+console.log(databaseOptions)
 const mongoose = require("mongoose");
 mongoose.Promise = global.Promise;
 mongoose
