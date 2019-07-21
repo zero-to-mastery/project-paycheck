@@ -4,10 +4,14 @@ import { Provider } from "react-redux";
 import App from "App";
 import ThemeWrapper from "ThemeWrapper";
 import store from "./redux";
+
+import { BrowserRouter } from "react-router-dom"
 ReactDOM.render(
   <Provider store={store}>
     <ThemeWrapper>
-      <App />
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
     </ThemeWrapper>
   </Provider>,
   document.getElementById("root")
