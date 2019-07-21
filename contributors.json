@@ -123,6 +123,12 @@
         "Kubernetes",
         "AWS"
       ]
+    },
+    {
+      "discord-name": "Rohan Gayen",
+      "trello-name": "Rohan Gayen",
+      "desired-role": "backend",
+      "skills": ["Node", "Express", "MongoDB", "Mongoose", "PHP", "MySQL"]
     }
   ]
 }
