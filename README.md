@@ -40,21 +40,44 @@ Will have two main views:
 - I can see a breakdown of my next paycheck that will show my income for that check and all the expenses that will be paid by that check
 - I can easily edit both income and expenses
 
+# Project setup
+
+Set upstream for your fork to point to the original repository. [Directions](https://help.github.com/en/articles/fork-a-repo)
+
+Install dependencies in both `client` and `server` folders with the `npm install` command
+
+## Database
+
+Make sure to have MongoDB installed locally or connect to your own cloud hosted database
+
+- Local:
+  - Installation directions for [Windows](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/)
+  - Installation directions for [Mac](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/)
+  - Installation directions for [Linux](https://docs.mongodb.com/manual/administration/install-on-linux/)
+- Cloud:
+  - MongoDB [Atlas](https://docs.atlas.mongodb.com/getting-started/)
+
 ## Requirements to start the server
 
 - The project is using .env file to store configuration variables. You need to rename .env-example to .env to get started.
 - Replace the values in .env with your actual values to connect to the database:
+
 ```
 DB_USER=user
 DB_HOST=localhost:27017
 DB_PASSWORD=password
 ```
-- If you are using the local database, you need to create a user in mongoDB database in order to  create a connection with authentication, for example:
+
+- If you are using the local database, you need to create a user in mongoDB database in order to create a connection with authentication, for example:
+
 ### launch mongo shell with this command in the terminal
+
 ```
 mongo
 ```
+
 ### then create a user in the database
+
 ```
 use projectpaycheck
 db.createUser(
@@ -66,11 +89,23 @@ db.createUser(
 )
 ```
 
+# How to contribute
+
+- Fork the repo
+- Set upstream to point to the original repo, read [this](https://help.github.com/en/articles/fork-a-repo)
+- Add yourself to the `contributors.json` file
+- Pick a ticket from the backlog column on Trello and assign yourself to it
+  - You can also make a ticket on Trello and work on that, just make sure to label it with the "non-outlined work" label
+  - Make sure no one else is working on the same task
+- Make changes to your repo
+- When done, submit a PR to the original repository
+- If your task involved the UI, include a screenshot with your PR
+- Move your ticket to "ready-to-merge" column
+
 ## Notes:
 
 - If you have any questions, contact Erik (Dichotomyy#0011) on Discord
 - Make sure to have the Prettier extension installed so that your code will autoformat according to the config file
-- Make sure to have MongoDB installed locally or add your own URL to the connect function. Please leave the default connect function when submitting a PR
 - Please keep PRs small so that code reviews will be managable
 
 ## Helpful Reading List:

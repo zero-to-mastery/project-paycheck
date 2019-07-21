@@ -11,14 +11,16 @@
   "team": [["Erik", "Project Lead"]],
   "links": [
     ["Github", "https://github.com/zero-to-mastery/project_paycheck"],
-    ["ReadME", "https://github.com/zero-to-mastery/project_paycheck/blob/master/README.md"]
+    ["ReadME", "https://github.com/zero-to-mastery/project_paycheck/blob/master/README.md"],
+    ["Fork Config", "https://help.github.com/en/articles/fork-a-repo"]
   ],
   "poi": [
     ["Github", "https://github.com/zero-to-mastery/project_paycheck"],
-    ["ReadME", "https://github.com/zero-to-mastery/project_paycheck/blob/master/README.md"]
+    ["ReadME", "https://github.com/zero-to-mastery/project_paycheck/blob/master/README.md"],
+    ["Fork Config", "https://help.github.com/en/articles/fork-a-repo"]
   ],
   "tasks": {
     "title": "Trello Tasks",
     "desc": "We use Trello to manage the tasks within this project, [here](https://trello.com/invite/b/FTPdi00b/03e4ce34cea0d30c6b834bc46ae7d07f/projectpaycheck) is your invitation. Further information on how to use use Trello to sign up to a task can be found in the [README.MD](https://github.com/zero-to-mastery/project_paycheck/blob/master/README.md) file on Github"
-}
+  }
 }
