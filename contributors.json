@@ -168,6 +168,22 @@
         "PostgreSQL",
         "CI/CD"
       ]
+    },
+    {
+      "discord-name": "Vladimir",
+      "trello-name": "Vladimir Klimov",
+      "desired-role": "fullstack",
+      "skills": [
+        "React",
+        "Redux",
+        "Express",
+        "Node",
+        "MongoDB",
+        "Jest",
+        "Docker",
+        "PostgreSQL",
+        "Python"
+      ]
     }
   ]
 }
