@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { forwardRef, useState } from "react";
 import PropTypes from "prop-types";
 import { Card, CardContent, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import MaterialTable from "material-table";
+
+import { tableIcons } from "views/financial-categories/icons/material-table-icons";
 
 const useStyles = makeStyles(() => ({
   card: {
@@ -14,14 +16,32 @@ const useStyles = makeStyles(() => ({
 const FinancialCategoryForm = ({ title, layout }) => {
   const [state, setState] = useState({
     data: [
-      { item: "Utilities", amount: 200.95, dueDate: "08.15.2019" },
+      { item: "Utilities", amount: 200.95, dueDate: "08/15/2019" },
       {
         item: "Groceries",
         amount: 50.35,
-        dueDate: "08.05.2019"
+        dueDate: "08/05/2019"
       }
     ]
   });
+
+  const addRow = async newData => {
+    const data = [...state.data];
+    data.push(newData);
+    setState({ ...state, data });
+  };
+
+  const updateRow = async (newData, oldData) => {
+    const data = [...state.data];
+    data[data.indexOf(oldData)] = newData;
+    setState({ ...state, data });
+  };
+
+  const rowDelete = async oldData => {
+    const data = [...state.data];
+    data.splice(data.indexOf(oldData), 1);
+    setState({ ...state, data });
+  };
 
   const classes = useStyles();
   const totalAmount = state.data.reduce((total, item) => (total += parseFloat(item.amount)), 0.0);
@@ -29,37 +49,14 @@ const FinancialCategoryForm = ({ title, layout }) => {
   return (
     <Card className={classes.card}>
       <MaterialTable
+        icons={tableIcons}
         title={title}
         columns={layout}
         data={state.data}
         editable={{
-          onRowAdd: newData =>
-            new Promise(resolve => {
-              setTimeout(() => {
-                resolve();
-                const data = [...state.data];
-                data.push(newData);
-                setState({ ...state, data });
-              }, 600);
-            }),
-          onRowUpdate: (newData, oldData) =>
-            new Promise(resolve => {
-              setTimeout(() => {
-                resolve();
-                const data = [...state.data];
-                data[data.indexOf(oldData)] = newData;
-                setState({ ...state, data });
-              }, 600);
-            }),
-          onRowDelete: oldData =>
-            new Promise(resolve => {
-              setTimeout(() => {
-                resolve();
-                const data = [...state.data];
-                data.splice(data.indexOf(oldData), 1);
-                setState({ ...state, data });
-              }, 600);
-            })
+          onRowAdd: async newData => await addRow(newData),
+          onRowUpdate: async (newData, oldData) => await updateRow(newData, oldData),
+          onRowDelete: async oldData => await rowDelete(oldData)
         }}
         options={{
           search: false

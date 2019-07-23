@@ -1,7 +1,7 @@
 import React from "react";
 import CssBaseline from "@material-ui/core/CssBaseline";
 
-import { Route, IndexRedirect } from "react-router-dom";
+import { Switch, Route, Redirect } from "react-router-dom";
 
 // View Imports
 import Homepage from "./views/Homepage/Homepage";
@@ -16,11 +16,12 @@ export default function App() {
     <div className="App">
       <CssBaseline />
       <MainAppBar />
-      <Route exact path="/" component={Homepage}>
-        <IndexRedirect to="/overview" />
-        <Route exact path="overview" component={FinancialCategoryPage} />
-        <Route exact path="paycheck" component={PaycheckCard} />
-      </Route>
+      <Switch>
+        <Redirect exact from="/" to="/overview" />
+        <Route exact path="/" component={Homepage} />
+        <Route exact path="/overview" component={FinancialCategoryPage} />
+        <Route exact path="/paycheck" component={PaycheckCard} />
+      </Switch>
     </div>
   );
 }

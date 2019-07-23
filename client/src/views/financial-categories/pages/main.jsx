@@ -15,30 +15,36 @@ const FORM_CONFIGS = [ExpensesConfig, IncomeConfig, DebtConfig, NeedsConfig, Wan
 const useStyles = makeStyles(() => ({
   root: {
     flexGrow: 1
+  },
+  header: {
+    marginTop: 20
   }
 }));
 
 const FinancialCatergoryPage = () => {
   const classes = useStyles();
   return (
-    <div className={classes.root}>
-      <Grid container spacing={4}>
-        <Grid item xs={12}>
-          <Typography align="center" variant="h4">
-            Finances Breakdown
-          </Typography>
-        </Grid>
-        <Grid item xs={12}>
-          <Grid container justify="center" spacing={4}>
-            {FORM_CONFIGS.map(({ name, layout }) => (
-              <Grid key={name} item>
-                <FinancialCategoryForm title={name} layout={layout} />
-              </Grid>
-            ))}
+    <React.Fragment>
+      <div className={classes.header}>
+        <Typography align="center" variant="h4">
+          Finances Breakdown
+        </Typography>
+      </div>
+      <div className={classes.root}>
+        <Grid container spacing={4}>
+          <Grid item xs={12} />
+          <Grid item xs={12}>
+            <Grid container justify="center" spacing={4}>
+              {FORM_CONFIGS.map(({ name, layout }) => (
+                <Grid key={name} item>
+                  <FinancialCategoryForm title={name} layout={layout} />
+                </Grid>
+              ))}
+            </Grid>
           </Grid>
         </Grid>
-      </Grid>
-    </div>
+      </div>
+    </React.Fragment>
   );
 };
 
