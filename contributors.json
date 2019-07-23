@@ -76,15 +76,7 @@
       "discord-name": "Bhavan",
       "trello-name": "Bhavan Channira",
       "desired-role": "frontend",
-      "skills": [
-        "React",
-        "jQuery",
-        "Bootstrap",
-        "MongoDB",
-        "Java",
-        "Spring",
-        "SQL Server"
-      ]
+      "skills": ["React", "jQuery", "Bootstrap", "MongoDB", "Java", "Spring", "SQL Server"]
     },
     {
       "discord-name": "ILivS",
@@ -106,15 +98,7 @@
       "discord-name": "diegchav",
       "trello-name": "Diego Chávez",
       "desired-role": "fullstack",
-      "skills": [
-        "React",
-        "Redux",
-        "Node",
-        "Express",
-        "MongoDB",
-        "Mongoose",
-        "Python"
-      ]
+      "skills": ["React", "Redux", "Node", "Express", "MongoDB", "Mongoose", "Python"]
     },
     {
       "discord-name": "Messi",
@@ -144,14 +128,7 @@
       "discord-name": "Rohan Gayen",
       "trello-name": "Rohan Gayen",
       "desired-role": "backend",
-      "skills": [
-        "Node",
-        "Express",
-        "MongoDB",
-        "Mongoose",
-        "PHP",
-        "MySQL"
-      ]
+      "skills": ["Node", "Express", "MongoDB", "Mongoose", "PHP", "MySQL"]
     },
     {
       "discord-name": "pillinho_sk",
@@ -183,6 +160,22 @@
         "Docker",
         "PostgreSQL",
         "Python"
+      ]
+    },
+    {
+      "discord-name": "nesharim",
+      "trello-name": "nesharim",
+      "desired-role": "fullstack",
+      "skills": [
+        "React",
+        "React-Native",
+        "Redux",
+        "Jest",
+        "Python",
+        "Flask",
+        "Java",
+        "Spring",
+        "Elasticsearch"
       ]
     }
   ]
