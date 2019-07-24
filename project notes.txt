@@ -1,0 +1,9 @@
+ join the Trello board
+- fork the repo on github
+- set up git configuration on your fork
+- add yourself to the contributors.json file
+- pick a task in the backlog column on Trello
+- make your changes to your repo
+- when done submit a PR to the original repo
+
+git merge upstream/development - update local repo
