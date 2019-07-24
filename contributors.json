@@ -183,6 +183,17 @@
       "trello-name": "William Porter",
       "desired-role": "Any",
       "skills": ["Node", "Express", "React", "Python"]
+    },
+    {
+      "discord-name": "FamNew",
+      "trello-name": "Charlotte newcomer",
+      "desired-role": "fullstack",
+      "skills": [
+        "React",
+        "Redux",
+        "PostgreSQL",
+        "JavaScript"
+      ]
     }
   ]
 }
