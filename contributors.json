@@ -177,6 +177,12 @@
         "Spring",
         "Elasticsearch"
       ]
+    },
+    {
+      "discord-name": "wmporter",
+      "trello-name": "William Porter",
+      "desired-role": "Any",
+      "skills": ["Node", "Express", "React", "Python"]
     }
   ]
 }
