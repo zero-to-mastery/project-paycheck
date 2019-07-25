@@ -79,7 +79,7 @@ export const PaycheckCard = ({ date = moment().valueOf() }) => {
       <CardContent className={classes.cardContent}>
         <Typography>{`Total income: ${income}`}</Typography>
         <List>
-          <Typography>{`Total expenses: ${totalExpenses}`}</Typography>
+          <Typography>{`Total expenses: ${totalExpenses ? totalExpenses : "0"}`}</Typography>
           {expenses
             .filter(expense => expense.createdAt > thisPayCheck && expense.createdAt < nextPayCheck)
             .map((expense, index) => {
@@ -94,7 +94,7 @@ export const PaycheckCard = ({ date = moment().valueOf() }) => {
             })}
         </List>
         <List>
-          <Typography>{`Debt Paid: ${totalDebtPaid}`}</Typography>
+          <Typography>{`Debt Paid: ${totalDebtPaid ? totalDebtPaid : "0"}`}</Typography>
           {debt.map((debt, index) => (
             <ListItemText key={index + debt.description} className={classes.listItem}>{`${
               debt.description
