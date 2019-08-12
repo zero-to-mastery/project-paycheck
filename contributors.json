@@ -1,19 +1,17 @@
 {
   "contributors": [
-  
     {
-      "discord-name": "",
-      "trello-name": "",
-      "desired-role": "",
+      "discord-name": "Mohit#0671",
+      "trello-name": "Mohit Bajaj",
+      "desired-role": "fullstack",
       "skills": [
         "React",
-        "Redux",
+        "PostgreSQL",
+        "JavaScript",
         "Node",
         "Express",
-        "MongoDB",
-        "Mongoose"
+        "MongoDB"
       ]
     }
-    
   ]
 }
