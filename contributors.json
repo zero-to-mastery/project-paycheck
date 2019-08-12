@@ -13,6 +13,17 @@
         "MongoDB",
         "Mongoose"
       ]
+    },
+    {
+      "discord-name": "Matteo G",
+      "trello-name": "Matteo Gassend",
+      "desired-role": "fullstack",
+      "skills": [
+        "React",
+        "Express",
+        "Mongoose",
+        "Node"
+      ]
     }
     
   ]
