@@ -1,19 +1,20 @@
 {
   "contributors": [
-  
     {
-      "discord-name": "",
-      "trello-name": "",
-      "desired-role": "",
+      "discord-name": "Vladimir",
+      "trello-name": "Vladimir Klimov",
+      "desired-role": "fullstack",
       "skills": [
         "React",
         "Redux",
-        "Node",
         "Express",
+        "Node",
         "MongoDB",
-        "Mongoose"
+        "Jest",
+        "Docker",
+        "PostgreSQL",
+        "Python"
       ]
     }
-    
   ]
 }
