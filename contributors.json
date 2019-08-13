@@ -56,6 +56,21 @@
         "Redux",
         "PostgreSQL"
       ]
+    },
+    {
+      "discord-name": "SatoruA#0637",
+      "trello-name": "zoranstankovic",
+      "desired-role": "fullstack",
+      "skills": [
+        "React (still learing)",
+        "Redux (still learing)",
+        "JavaScript",
+        "PHP",
+        "MySQL",
+        "Node (still learning)",
+        "Express (still learning)",
+        "MongoDB (want to learn)"
+      ]
     }
   ]
 }
