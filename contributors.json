@@ -30,6 +30,21 @@
       ]
     },
     {
+      "discord-name": "ChunLin#8788",
+      "trello-name": "ChunLin",
+      "desired-role": "Front-end",
+      "skills": [
+        "React",
+        "Redux",
+        "Styled-Components",
+        "Jest",
+        "React-Testing-Library",
+        "Gatsby",
+        "Node (a little bit)",
+        "Express (a little bit)"
+      ]
+    },
+    {
       "discord-name": "Teva",
       "trello-name": "Teva Henry",
       "desired-role": "fullstack",
