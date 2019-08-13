@@ -43,6 +43,19 @@
         "Node (a little bit)",
         "Express (a little bit)"
       ]
-    }
+    },
+    {
+      "discord-name": "nick .#3158",
+      "trello-name": "nicholasulricksen",
+      "desired-role": "Fullstack",
+      "skills": [
+        "React",
+        "Redux",
+        "Node",
+        "Express",
+        "MongoDB",
+        "Mongoose"
+      ]
+    } 
   ]
 }
