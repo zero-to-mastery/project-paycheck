@@ -45,6 +45,19 @@
       ]
     },
     {
+      "discord-name": "Teva",
+      "trello-name": "Teva Henry",
+      "desired-role": "fullstack",
+      "skills": [
+        "JavaScript",
+        "Node",
+        "Express",
+        "React",
+        "Redux",
+        "PostgreSQL"
+      ]
+    },
+    {
       "discord-name": "SatoruA#0637",
       "trello-name": "zoranstankovic",
       "desired-role": "fullstack",
