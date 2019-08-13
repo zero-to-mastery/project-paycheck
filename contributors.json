@@ -45,6 +45,19 @@
       ]
     },
     {
+      "discord-name": "nick .#3158",
+      "trello-name": "nicholasulricksen",
+      "desired-role": "Fullstack",
+      "skills": [
+        "React",
+        "Redux",
+        "Node",
+        "Express",
+        "MongoDB",
+        "Mongoose"
+      ]
+    },
+    {
       "discord-name": "Teva",
       "trello-name": "Teva Henry",
       "desired-role": "fullstack",
