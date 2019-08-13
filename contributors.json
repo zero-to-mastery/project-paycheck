@@ -43,6 +43,19 @@
         "Node (a little bit)",
         "Express (a little bit)"
       ]
+    },
+    {
+      "discord-name": "Teva",
+      "trello-name": "Teva Henry",
+      "desired-role": "fullstack",
+      "skills": [
+        "JavaScript",
+        "Node",
+        "Express",
+        "React",
+        "Redux",
+        "PostgreSQL"
+      ]
     }
   ]
 }
