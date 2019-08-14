@@ -102,7 +102,7 @@
       ]
     },
     {
-    "discord-name": "Bhavan",
+      "discord-name": "Bhavan",
       "trello-name": "Bhavan Channira",
       "desired-role": "frontend",
       "skills": [
@@ -113,6 +113,23 @@
         "Java",
         "Spring",
         "SQL Server"
+      ]
+    },
+    {
+      "discord-name": "OmegaTej",
+      "trello-name": "Hartej Lehal",
+      "desired-role": "Frontend",
+      "skills": [
+        "JavaScript",
+        "React",
+        "Redux",
+        "Gatsby",
+        "Vue",
+        "jQuery",
+        "Node/npm",
+        "MongoDB",
+        "Java",
+        "GraphQL"
       ]
     }
   ]
