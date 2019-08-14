@@ -1,5 +1,21 @@
 {
   "contributors": [
+  	{
+      "discord-name": "notAnkur",
+      "trello-name": "notankur",
+      "desired-role": "Project Maintainer / Backend Lead",
+      "skills": [
+        "React",
+        "Redux",
+        "Express",
+        "Node",
+        "MongoDB",
+        "Java",
+        "Python",
+        "MySql",
+        "PostgreSQL"
+      ]
+    },
     {
       "discord-name": "Vladimir",
       "trello-name": "Vladimir Klimov",
