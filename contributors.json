@@ -114,6 +114,23 @@
         "Spring",
         "SQL Server"
       ]
-    }
+    },
+    {
+      "discord-name": "OmegaTej",
+        "trello-name": "Hartej Lehal",
+        "desired-role": "Frontend",
+        "skills": [
+          "JavaScript",
+          "React",
+          "Redux",
+          "Gatsby",
+          "Vue",
+          "jQuery",
+          "Node/npm",
+          "MongoDB",
+          "Java",
+          "GraphQL"
+        ]
+      }
   ]
 }
