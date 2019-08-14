@@ -84,6 +84,20 @@
         "Express (still learning)",
         "MongoDB (want to learn)"
       ]
+    },
+    {
+    "discord-name": "Bhavan",
+      "trello-name": "Bhavan Channira",
+      "desired-role": "frontend",
+      "skills": [
+        "React",
+        "jQuery",
+        "Bootstrap",
+        "MongoDB",
+        "Java",
+        "Spring",
+        "SQL Server"
+      ]
     }
   ]
 }
