@@ -131,6 +131,22 @@
         "Java",
         "GraphQL"
       ]
+    },
+    {
+      "discord-name":"Matteo G",
+      "trello-name":"Matteo Gassend",
+      "desired-role":"Fullstack || Backend",
+      "skills": [
+        "React",
+        "Javascript",
+        "NodeJs",
+        "Mongoose",
+        "MongoDB",
+        "GraphQL",
+        "JQuery",
+        "Express",
+        "Docker"
+      ]
     }
   ]
 }
