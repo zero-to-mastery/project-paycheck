@@ -131,6 +131,18 @@
         "Java",
         "GraphQL"
       ]
+    }, 
+    {
+      "discord-name": "Pol",
+      "trello-name": "parzu,
+      "desired-role": "Fullstack",
+      "skills": [
+        "JavaScript",
+        "React",
+        "Node",
+        "Express",
+        "PostgreSQL",
+      ]
     }
   ]
 }
