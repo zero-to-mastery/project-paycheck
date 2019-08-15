@@ -104,6 +104,22 @@
       ]
     },
     {
+      "discord-name":"Matteo G",
+      "trello-name":"Matteo Gassend",
+      "desired-role":"Fullstack || Backend",
+      "skills": [
+        "React",
+        "Javascript",
+        "NodeJs",
+        "Mongoose",
+        "MongoDB",
+        "GraphQL",
+        "JQuery",
+        "Express",
+        "Docker"
+      ]
+    },
+    {
       "discord-name": "Dani#1309",
       "trello-name": "danidz",
       "desired-role": "Frontend",
@@ -118,6 +134,7 @@
         "Emotion",
         "Express (still learning)",
         "Styled-Components"
+      ]
     }, 
     {
       "discord-name": "Pol",
