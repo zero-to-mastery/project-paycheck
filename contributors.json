@@ -1,6 +1,6 @@
 {
   "contributors": [
-  	{
+    {
       "discord-name": "notAnkur",
       "trello-name": "notankur",
       "desired-role": "Project Maintainer / Backend Lead",
@@ -36,14 +36,7 @@
       "discord-name": "Mohit#0671",
       "trello-name": "Mohit Bajaj",
       "desired-role": "fullstack",
-      "skills": [
-        "React",
-        "PostgreSQL",
-        "JavaScript",
-        "Node",
-        "Express",
-        "MongoDB"
-      ]
+      "skills": ["React", "PostgreSQL", "JavaScript", "Node", "Express", "MongoDB"]
     },
     {
       "discord-name": "ChunLin#8788",
@@ -64,27 +57,13 @@
       "discord-name": "nick .#3158",
       "trello-name": "nicholasulricksen",
       "desired-role": "Fullstack",
-      "skills": [
-        "React",
-        "Redux",
-        "Node",
-        "Express",
-        "MongoDB",
-        "Mongoose"
-      ]
+      "skills": ["React", "Redux", "Node", "Express", "MongoDB", "Mongoose"]
     },
     {
       "discord-name": "Teva",
       "trello-name": "Teva Henry",
       "desired-role": "fullstack",
-      "skills": [
-        "JavaScript",
-        "Node",
-        "Express",
-        "React",
-        "Redux",
-        "PostgreSQL"
-      ]
+      "skills": ["JavaScript", "Node", "Express", "React", "Redux", "PostgreSQL"]
     },
     {
       "discord-name": "SatoruA#0637",
@@ -105,15 +84,7 @@
       "discord-name": "Bhavan",
       "trello-name": "Bhavan Channira",
       "desired-role": "frontend",
-      "skills": [
-        "React",
-        "jQuery",
-        "Bootstrap",
-        "MongoDB",
-        "Java",
-        "Spring",
-        "SQL Server"
-      ]
+      "skills": ["React", "jQuery", "Bootstrap", "MongoDB", "Java", "Spring", "SQL Server"]
     },
     {
       "discord-name": "OmegaTej",
@@ -131,6 +102,22 @@
         "Java",
         "GraphQL"
       ]
+    },
+    {
+      "discord-name": "Dani#1309",
+      "trello-name": "danidz",
+      "desired-role": "Frontend",
+      "skills": [
+        "JavaScript",
+        "React",
+        "Redux",
+        "jQuery",
+        "Node/npm",
+        "MongoDB",
+        "Typescript",
+        "Emotion",
+        "Express (still learning)",
+        "Styled-Components"
     }, 
     {
       "discord-name": "Pol",
