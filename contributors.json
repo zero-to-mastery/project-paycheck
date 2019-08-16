@@ -17,6 +17,20 @@
       ]
     },
     {
+      "discord-name": "oghenebrume",
+      "trello-name": "raphaelnoriode",
+      "desired-role": "Project Maintainer",
+      "skills": [
+        "React",
+        "Redux",
+        "Express",
+        "Node",
+        "MongoDB",
+        "Ruby",
+        "PostgreSQL"
+      ]
+    },
+    {
       "discord-name": "Vladimir",
       "trello-name": "Vladimir Klimov",
       "desired-role": "fullstack",
