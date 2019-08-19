@@ -161,6 +161,19 @@
         "Express",
         "PostgreSQL",
       ]
+    },
+
+    {
+      "discord-name": "Nadnadou",
+      "trello-name": "ngaya1",
+      "desired-role": "Fullstack",
+      "skills": [
+        "JavaScript",
+        "React",
+        "Redux",
+        "Node/npm",
+        "MongoDB"
+      ]
     }
   ]
 }
