@@ -94,8 +94,8 @@ db.createUser(
 - Fork the repo
 - Set upstream to point to the original repo, read [this](https://help.github.com/en/articles/fork-a-repo)
 - Add yourself to the `contributors.json` file
-- Pick a ticket from the backlog column on Trello and assign yourself to it
-  - You can also make a ticket on Trello and work on that, just make sure to label it with the "non-outlined work" label
+- Pick a ticket from the backlog column on Notion and assign yourself to it
+  - You can also make a ticket on Notion and work on that, just make sure to label it with the "non-outlined work" label
   - Make sure no one else is working on the same task
 - Make changes to your repo
 - When done, submit a PR to the original repository
@@ -104,7 +104,6 @@ db.createUser(
 
 ## Notes:
 
-- If you have any questions, contact notAnkur (notAnkur#6968) on Discord
 - Make sure to have the Prettier extension installed so that your code will autoformat according to the config file
 - Please keep PRs small so that code reviews will be managable
 
