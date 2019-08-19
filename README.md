@@ -104,7 +104,7 @@ db.createUser(
 
 ## Notes:
 
-- If you have any questions, contact Erik (Dichotomyy#0011) on Discord
+- If you have any questions, contact notAnkur (notAnkur#6968) on Discord
 - Make sure to have the Prettier extension installed so that your code will autoformat according to the config file
 - Please keep PRs small so that code reviews will be managable
 
