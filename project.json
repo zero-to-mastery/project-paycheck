@@ -21,6 +21,6 @@
   ],
   "tasks": {
     "title": "Trello Tasks",
-    "desc": "We use Notion.so to manage the tasks within this project, [here](https://www.notion.so/projpaycheck) is your invitation. Further information on how to use use Trello to sign up to a task can be found in the [README.MD](https://github.com/zero-to-mastery/project_paycheck/blob/master/README.md) file on Github"
+    "desc": "We use Notion.so to manage the tasks within this project, [here](https://www.notion.so/projpaycheck) is your invitation. Further information on how to use Notion to sign up to a task can be found in the [README.MD](https://github.com/zero-to-mastery/project_paycheck/blob/master/README.md) file on Github"
   }
 }
