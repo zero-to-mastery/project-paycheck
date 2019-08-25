@@ -187,6 +187,21 @@
           "Express (still learning)",
           "PostgreSQL"
       ]
+    }, 
+
+    {
+      "discord-name": "Kunal",
+      "trello-name": "kunal2297", 
+      "notion.so":"kunaldubey2297@gmail.com",
+      "desired-role": "Fullstack",
+      "skills": [
+        "JavaScript",
+        "React",
+        "PostgreSQL",
+        "Node/npm",
+        "Wordpress",
+        "C++/C"
+      ]
     }
 
   ]
