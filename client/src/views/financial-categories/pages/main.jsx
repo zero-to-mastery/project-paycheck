@@ -16,8 +16,13 @@ const useStyles = makeStyles(() => ({
   root: {
     flexGrow: 1
   },
+  cardContainer: {
+    overflow: "auto",
+    margin: "10px",
+    //padding: "10px"
+  },
   header: {
-    marginTop: 20
+    margin: 20
   }
 }));
 
@@ -31,12 +36,12 @@ const FinancialCatergoryPage = () => {
         </Typography>
       </div>
       <div className={classes.root}>
-        <Grid container spacing={4}>
+        <Grid container>
           <Grid item xs={12} />
           <Grid item xs={12}>
-            <Grid container justify="center" spacing={4}>
+            <Grid container justify="center"  >
               {FORM_CONFIGS.map(({ name, layout }) => (
-                <Grid key={name} item>
+                <Grid key={name} item className={classes.cardContainer}>
                   <FinancialCategoryForm title={name} layout={layout} />
                 </Grid>
               ))}
