@@ -219,7 +219,19 @@
         "GraphQL",
         "Laravel"
       ]
+    },
+    {
+      "discord-name": "Sandeep#8289",
+      "trello-name": "sandeepkmr",
+      "desired-role": "front-end",
+      "skills": [
+        "React",
+        "Redux",
+        "Express",
+        "PostgreSQL",
+        "JavaScript",
+        "Node"
+      ]
     }
-
   ]
 }
