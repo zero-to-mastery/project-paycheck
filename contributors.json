@@ -202,6 +202,23 @@
         "Wordpress",
         "C++/C"
       ]
+    },
+    {
+      "discord-name": "Eder",
+      "trello-name": "ederramirezhernandez",
+      "desired-role": "Fullstack",
+      "skills": [
+        "React",
+        "Redux",
+        "Express",
+        "Node",
+        "MongoDB",
+        "Javascript",
+        "MySql",
+        "Vue",
+        "GraphQL",
+        "Laravel"
+      ]
     }
 
   ]
