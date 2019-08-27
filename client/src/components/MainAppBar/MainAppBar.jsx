@@ -43,7 +43,13 @@ export default function MainAppBar(props) {
           >
             PAYCHECK
           </Button>
-          <Button color="inherit">Login</Button>
+          <Button 
+            className={classes.menuButton}
+            color="inherit"
+            component={RouterLink}
+            to="/login">
+              Login
+          </Button>
         </Toolbar>
       </AppBar>
     </div>
