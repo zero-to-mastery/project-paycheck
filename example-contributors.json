@@ -1,0 +1,225 @@
+{
+  "contributors": [
+    {
+      "discord-name": "Erik Herbranson",
+      "trello-name": "Erik Herbranson",
+      "desired-role": "fullstack",
+      "skills": [
+        "React",
+        "Redux",
+        "Material-UI",
+        "Node",
+        "Express",
+        "MongoDB",
+        "Mongoose",
+        "CouchDB",
+        "Elasticsearch",
+        "MySQL",
+        "PostgreSQL",
+        "Python",
+        "Flask",
+        "Java",
+        "Spring"
+      ]
+    },
+    {
+      "discord-name": "garosan",
+      "trello-name": "Edgar Sánchez",
+      "desired-role": "fullstack",
+      "skills": [
+        "React",
+        "Redux",
+        "Material-UI",
+        "Node",
+        "Express",
+        "MongoDB",
+        "Mongoose",
+        "Python",
+        "AWS"
+      ]
+    },
+    {
+      "discord-name": "Pablo Peña",
+      "trello-name": "Pablo Peña",
+      "desired-role": "backend",
+      "skills": [
+        "Node",
+        "Express",
+        "MongoDB",
+        "Mongoose",
+        "Apollo-Server",
+        "PostgreSQL",
+        "Python",
+        "Flask",
+        "Java"
+      ]
+    },
+    {
+      "discord-name": "codepapi",
+      "trello-name": "Aaron Massey",
+      "desired-role": "Full Stack",
+      "skills": [
+        "React",
+        "Redux",
+        "Bootstrap",
+        "Material-UI",
+        "GraphQL Apollo Client",
+        "Node",
+        "Express",
+        "MongoDB",
+        "Mongoose",
+        "Mocha",
+        "Chai"
+      ]
+    },
+    {
+      "discord-name": "Bhavan",
+      "trello-name": "Bhavan Channira",
+      "desired-role": "frontend",
+      "skills": ["React", "jQuery", "Bootstrap", "MongoDB", "Java", "Spring", "SQL Server"]
+    },
+    {
+      "discord-name": "ILivS",
+      "trello-name": "Hugh Do",
+      "desired-role": "fullstack",
+      "skills": [
+        "React",
+        "Redux",
+        "Node",
+        "Express",
+        "MongoDB",
+        "Mongoose",
+        "Python",
+        "Docker",
+        "Kubernetes"
+      ]
+    },
+    {
+      "discord-name": "diegchav",
+      "trello-name": "Diego Chávez",
+      "desired-role": "fullstack",
+      "skills": ["React", "Redux", "Node", "Express", "MongoDB", "Mongoose", "Python"]
+    },
+    {
+      "discord-name": "Messi",
+      "trello-name": "Messi",
+      "desired-role": "fullstack",
+      "skills": [
+        "Angular",
+        "React",
+        "Redux",
+        "Material-UI",
+        "Node",
+        "Express",
+        "MongoDB",
+        "Mongoose",
+        "MySQL",
+        "Oracle",
+        "Java",
+        "Spring",
+        "Hibernate",
+        "REST web services",
+        "Docker",
+        "Kubernetes",
+        "AWS"
+      ]
+    },
+    {
+      "discord-name": "Rohan Gayen",
+      "trello-name": "Rohan Gayen",
+      "desired-role": "backend",
+      "skills": ["Node", "Express", "MongoDB", "Mongoose", "PHP", "MySQL"]
+    },
+    {
+      "discord-name": "pillinho_sk",
+      "trello-name": "Miroslav Pillar",
+      "desired-role": "fullstack",
+      "skills": [
+        "React",
+        "Redux",
+        "Material-UI",
+        "GatsbyJS",
+        "Node",
+        "Express",
+        "Docker",
+        "PostgreSQL",
+        "CI/CD"
+      ]
+    },
+    {
+      "discord-name": "Vladimir",
+      "trello-name": "Vladimir Klimov",
+      "desired-role": "fullstack",
+      "skills": [
+        "React",
+        "Redux",
+        "Express",
+        "Node",
+        "MongoDB",
+        "Jest",
+        "Docker",
+        "PostgreSQL",
+        "Python"
+      ]
+    },
+    {
+      "discord-name": "nesharim",
+      "trello-name": "nesharim",
+      "desired-role": "fullstack",
+      "skills": [
+        "React",
+        "React-Native",
+        "Redux",
+        "Jest",
+        "Python",
+        "Flask",
+        "Java",
+        "Spring",
+        "Elasticsearch"
+      ]
+    },
+    {
+      "discord-name": "wmporter",
+      "trello-name": "William Porter",
+      "desired-role": "Any",
+      "skills": ["Node", "Express", "React", "Python"]
+    },
+    {
+      "discord-name": "FamNew",
+      "trello-name": "Charlotte newcomer",
+      "desired-role": "fullstack",
+      "skills": [
+        "React",
+        "Redux",
+        "PostgreSQL",
+        "JavaScript"
+      ]
+    },
+    {
+      "discord-name": "Matteo G",
+      "trello-name": "Matteo Gassend",
+      "desired-role": "fullstack",
+      "skills": [
+        "React",
+        "Express",
+        "Mongoose",
+        "Node"
+      ]
+    },
+
+    {
+      "discord-name": "Sandeep#8289",
+      "trello-name": "sandeepkmr",
+      "desired-role": "front-end",
+      "skills": [
+        "React",
+        "Redux",
+        "Express",
+        "PostgreSQL",
+        "JavaScript",
+        "Node"
+      ]
+    }
+    
+  ]
+}

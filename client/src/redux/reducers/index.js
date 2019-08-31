@@ -1,14 +1,11 @@
 import { combineReducers } from "redux";
-
-export const user = (state = {}, action) => {
-  switch (action.type) {
-    case "CURRENT_USER":
-      return action.payload.user;
-    default:
-      return state;
-  }
-};
-
-export default combineReducers({
-  user
+import userReducer from "./user";
+import expensesReducer from "./expenses";
+import debtReducer from "./debt";
+const rootReducer = combineReducers({
+  user: userReducer,
+  expenses: expensesReducer,
+  debt: debtReducer
 });
+
+export default rootReducer;
