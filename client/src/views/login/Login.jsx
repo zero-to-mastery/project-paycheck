@@ -1,88 +1,91 @@
 import React from "react";
 import Button from "@material-ui/core/Button";
 import { makeStyles } from "@material-ui/core/styles";
-import TextField from '@material-ui/core/TextField';
-import Grid from '@material-ui/core/Grid';
+import Typography from "@material-ui/core/Typography"
+import TextField from "@material-ui/core/TextField";
+import Grid from "@material-ui/core/Grid";
+import Paper from "@material-ui/core/Paper";
+import { createMuiTheme } from '@material-ui/core/styles';
+import { ThemeProvider } from '@material-ui/styles';
+import blue from "@material-ui/core/colors/blue";
+
+const theme = createMuiTheme({
+    palette: {
+      secondary:{ main:'#4885ed'}//Google color
+    }
+  }
+)
 
 const useStyles = makeStyles(theme => ({
     root: {
-      flexGrow: 1
+      flexGrow: 1,
     },
-    loginButton: {
-      marginRight: theme.spacing(4),
-      border: 0,
-      bordeRadius: 4,
-      backgroundColor: 'black',
-      
+    paper:{
+      marginTop: theme.spacing(2), // space between the menu and the form
+      padding: theme.spacing(5),
+      textAlign: 'center',
+    },
+    button:{
+      margin: theme.spacing(1)
+    },
+    input:{
+      marginRight:theme.spacing(10),
+      marginTop: theme.spacing(2)
+    },
+
+    palette:{
+ 
     }
   }));
 
-export default function Login(props) {
-    const classes = useStyles();
 
+export default function Login(props) {
+  const classes = useStyles();
   return (
     <div className={classes.root}>
+        <Grid 
+          container
+          justify="center"
+          alignItems="center"
+          >
+          <Grid item>
+            <Paper className={classes.paper}>
+                <Grid
+                  container
+                  direction="column"
+                  justify="center"
+                >
+                  <Typography variant="h2">Hello</Typography>
+                  <Typography variant="subtitle1" >Sign in or create an account</Typography>
 
-    <Grid
-    container
-    direction="column"
-    justify="center"
-    alignItems="center"
-    >
+              </Grid>
 
-        <h1>Hello</h1>
-        <h3>Sign in or create an account.</h3>
+              <Grid
+                container
+                direction="column"
+                justify="center"
+                className={classes.input}
+              >
+                <TextField
+                  placeholder="Email"
+                  ></TextField>
 
-        <Grid
-            container
-            direction="row"
-            justify="center"
-            alignItems="center"
-        >
+                <TextField
+                  placeholder="Password"
+                  ></TextField>
 
+                <Button variant="contained" color="primary" className={classes.button}>Sign in</Button>
 
-            <form className={classes.container} noValidate autoComplete="off">
-            <TextField
-                id="outlined-name"
-                label="Email address"
-                className={classes.textField}
-                margin="normal"
-                variant="outlined"
-            />
+                <ThemeProvider theme={theme}>
+                  <Button variant="contained" color="secondary" className={classes.button}>Sign in with Google</Button>
+                </ThemeProvider>
+              
 
-            <TextField
-                id="outlined-password-input"
-                label="Password"
-                className={classes.textField}
-                type="password"
-                autoComplete="current-password"
-                margin="normal"
-                variant="outlined"
-            />
+              </Grid>
 
-
-            </form>
-
-        </Grid>
-
-        <Grid
-            container
-            direction="row"
-            justify="center"
-            alignItems="center"
-        >
-            <Button
-                className={classes.loginButton}
-                color="inherit">
-                Confirm</Button>
-            <Button
-                className={classes.loginButton}
-                color="inherit">
-                Create an account</Button>
-
-        </Grid>
-
-    </Grid>
+            </Paper>
+          </Grid> 
+      </Grid>  
     </div>
   );
 }
