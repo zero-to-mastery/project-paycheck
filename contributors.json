@@ -1,179 +1,194 @@
 {
-  "contributors": [
-    {
-      "discord-name": "notAnkur",
-      "trello-name": "notankur",
-      "desired-role": "Project Maintainer / Backend Lead",
-      "skills": [
-        "React",
-        "Redux",
-        "Express",
-        "Node",
-        "MongoDB",
-        "Java",
-        "Python",
-        "MySql",
-        "PostgreSQL"
-      ]
-    },
-    {
-      "discord-name": "oghenebrume",
-      "trello-name": "raphaelnoriode",
-      "desired-role": "Project Maintainer",
-      "skills": [
-        "React",
-        "Redux",
-        "Express",
-        "Node",
-        "MongoDB",
-        "Ruby",
-        "PostgreSQL"
-      ]
-    },
-    {
-      "discord-name": "Vladimir",
-      "trello-name": "Vladimir Klimov",
-      "desired-role": "fullstack",
-      "skills": [
-        "React",
-        "Redux",
-        "Express",
-        "Node",
-        "MongoDB",
-        "Jest",
-        "Docker",
-        "PostgreSQL",
-        "Python"
-      ]
-    },
-    {
-      "discord-name": "Mohit#0671",
-      "trello-name": "Mohit Bajaj",
-      "desired-role": "fullstack",
-      "skills": ["React", "PostgreSQL", "JavaScript", "Node", "Express", "MongoDB"]
-    },
-    {
-      "discord-name": "ChunLin#8788",
-      "trello-name": "ChunLin",
-      "desired-role": "Front-end",
-      "skills": [
-        "React",
-        "Redux",
-        "Styled-Components",
-        "Jest",
-        "React-Testing-Library",
-        "Gatsby",
-        "Node (a little bit)",
-        "Express (a little bit)"
-      ]
-    },
-    {
-      "discord-name": "nick .#3158",
-      "trello-name": "nicholasulricksen",
-      "desired-role": "Fullstack",
-      "skills": ["React", "Redux", "Node", "Express", "MongoDB", "Mongoose"]
-    },
-    {
-      "discord-name": "Teva",
-      "trello-name": "Teva Henry",
-      "desired-role": "fullstack",
-      "skills": ["JavaScript", "Node", "Express", "React", "Redux", "PostgreSQL"]
-    },
-    {
-      "discord-name": "SatoruA#0637",
-      "trello-name": "zoranstankovic",
-      "desired-role": "fullstack",
-      "skills": [
-        "React (still learing)",
-        "Redux (still learing)",
-        "JavaScript",
-        "PHP",
-        "MySQL",
-        "Node (still learning)",
-        "Express (still learning)",
-        "MongoDB (want to learn)"
-      ]
-    },
-    {
-      "discord-name": "Bhavan",
-      "trello-name": "Bhavan Channira",
-      "desired-role": "frontend",
-      "skills": ["React", "jQuery", "Bootstrap", "MongoDB", "Java", "Spring", "SQL Server"]
-    },
-    {
-      "discord-name": "OmegaTej",
-      "trello-name": "Hartej Lehal",
-      "desired-role": "Frontend",
-      "skills": [
-        "JavaScript",
-        "React",
-        "Redux",
-        "Gatsby",
-        "Vue",
-        "jQuery",
-        "Node/npm",
-        "MongoDB",
-        "Java",
-        "GraphQL"
-      ]
-    },
-    {
-      "discord-name":"Matteo G",
-      "trello-name":"Matteo Gassend",
-      "desired-role":"Fullstack || Backend",
-      "skills": [
-        "React",
-        "Javascript",
-        "NodeJs",
-        "Mongoose",
-        "MongoDB",
-        "GraphQL",
-        "JQuery",
-        "Express",
-        "Docker"
-      ]
-    },
-    {
-      "discord-name": "Dani#1309",
-      "trello-name": "danidz",
-      "desired-role": "Frontend",
-      "skills": [
-        "JavaScript",
-        "React",
-        "Redux",
-        "jQuery",
-        "Node/npm",
-        "MongoDB",
-        "Typescript",
-        "Emotion",
-        "Express (still learning)",
-        "Styled-Components"
-      ]
-    }, 
-    {
-      "discord-name": "Pol",
-      "trello-name": "parzu,
-      "desired-role": "Fullstack",
-      "skills": [
-        "JavaScript",
-        "React",
-        "Node",
-        "Express",
-        "PostgreSQL",
-      ]
-    },
+	"contributors": [
+		{
+			"discord-name": "notAnkur",
+			"trello-name": "notankur",
+			"desired-role": "Project Maintainer / Backend Lead",
+			"skills": [ "React", "Redux", "Express", "Node", "MongoDB", "Java", "Python", "MySql", "PostgreSQL" ]
+		},
+		{
+			"discord-name": "oghenebrume",
+			"trello-name": "raphaelnoriode",
+			"desired-role": "Project Maintainer",
+			"skills": [ "React", "Redux", "Express", "Node", "MongoDB", "Ruby", "PostgreSQL" ]
+		},
+		{
+			"discord-name": "Vladimir",
+			"trello-name": "Vladimir Klimov",
+			"desired-role": "fullstack",
+			"skills": [ "React", "Redux", "Express", "Node", "MongoDB", "Jest", "Docker", "PostgreSQL", "Python" ]
+		},
+		{
+			"discord-name": "Mohit#0671",
+			"trello-name": "Mohit Bajaj",
+			"desired-role": "fullstack",
+			"skills": [ "React", "PostgreSQL", "JavaScript", "Node", "Express", "MongoDB" ]
+		},
+		{
+			"discord-name": "ChunLin#8788",
+			"trello-name": "ChunLin",
+			"desired-role": "Front-end",
+			"skills": [
+				"React",
+				"Redux",
+				"Styled-Components",
+				"Jest",
+				"React-Testing-Library",
+				"Gatsby",
+				"Node (a little bit)",
+				"Express (a little bit)"
+			]
+		},
+		{
+			"discord-name": "nick .#3158",
+			"trello-name": "nicholasulricksen",
+			"desired-role": "Fullstack",
+			"skills": [ "React", "Redux", "Node", "Express", "MongoDB", "Mongoose" ]
+		},
+		{
+			"discord-name": "Teva",
+			"trello-name": "Teva Henry",
+			"desired-role": "fullstack",
+			"skills": [ "JavaScript", "Node", "Express", "React", "Redux", "PostgreSQL" ]
+		},
+		{
+			"discord-name": "SatoruA#0637",
+			"trello-name": "zoranstankovic",
+			"desired-role": "fullstack",
+			"skills": [
+				"React (still learing)",
+				"Redux (still learing)",
+				"JavaScript",
+				"PHP",
+				"MySQL",
+				"Node (still learning)",
+				"Express (still learning)",
+				"MongoDB (want to learn)"
+			]
+		},
+		{
+			"discord-name": "Bhavan",
+			"trello-name": "Bhavan Channira",
+			"desired-role": "frontend",
+			"skills": [ "React", "jQuery", "Bootstrap", "MongoDB", "Java", "Spring", "SQL Server" ]
+		},
+		{
+			"discord-name": "OmegaTej",
+			"trello-name": "Hartej Lehal",
+			"desired-role": "Frontend",
+			"skills": [
+				"JavaScript",
+				"React",
+				"Redux",
+				"Gatsby",
+				"Vue",
+				"jQuery",
+				"Node/npm",
+				"MongoDB",
+				"Java",
+				"GraphQL"
+			]
+		},
+		{
+			"discord-name": "Matteo G",
+			"trello-name": "Matteo Gassend",
+			"desired-role": "Fullstack || Backend",
+			"skills": [
+				"React",
+				"Javascript",
+				"NodeJs",
+				"Mongoose",
+				"MongoDB",
+				"GraphQL",
+				"JQuery",
+				"Express",
+				"Docker"
+			]
+		},
+		{
+			"discord-name": "Dani#1309",
+			"trello-name": "danidz",
+			"desired-role": "Frontend",
+			"skills": [
+				"JavaScript",
+				"React",
+				"Redux",
+				"jQuery",
+				"Node/npm",
+				"MongoDB",
+				"Typescript",
+				"Emotion",
+				"Express (still learning)",
+				"Styled-Components"
+			]
+		},
+		{
+			"discord-name": "Pol",
+			"trello-name": "parzu",
+			"desired-role": "Fullstack",
+			"skills": [ "JavaScript", "React", "Node", "Express", "PostgreSQL" ]
+		},
 
-    {
-      "discord-name": "Nadnadou",
-      "trello-name": "ngaya1",
-      "desired-role": "Fullstack",
-      "skills": [
-        "JavaScript",
-        "React",
-        "Redux",
-        "Node/npm",
-        "MongoDB"
-      ]
-    }
-  ]
+		{
+			"discord-name": "Nadnadou",
+			"trello-name": "ngaya1",
+			"desired-role": "Fullstack",
+			"skills": [ "JavaScript", "React", "Redux", "Node/npm", "MongoDB" ]
+		},
+
+		{
+			"discord-name": "naima shaikh",
+			"trello-name": "nimi",
+			"desired-role": "Full stack",
+			"skills": [ "Javascript", "React", "Styled-Components", "Express (still learning)", "PostgreSQL" ]
+		},
+
+		{
+			"discord-name": "Kunal",
+			"trello-name": "kunal2297",
+			"notion.so": "kunaldubey2297@gmail.com",
+			"desired-role": "Fullstack",
+			"skills": [ "JavaScript", "React", "PostgreSQL", "Node/npm", "Wordpress", "C++/C" ]
+		},
+		{
+			"discord-name": "Eder",
+			"trello-name": "ederramirezhernandez",
+			"desired-role": "Fullstack",
+			"skills": [
+				"React",
+				"Redux",
+				"Express",
+				"Node",
+				"MongoDB",
+				"Javascript",
+				"MySql",
+				"Vue",
+				"GraphQL",
+				"Laravel"
+			]
+		},
+		{
+			"discord-name": "Sandeep#8289",
+			"trello-name": "sandeepkmr",
+			"desired-role": "front-end",
+			"skills": [ "React", "Redux", "Express", "PostgreSQL", "JavaScript", "Node" ]
+		},
+		{
+			"discord-name": "Eoz#9600",
+			"trello-name": "eozdil",
+			"notion.so": "eozdil174@gmail.com",
+			"desired-role": "Fullstack || Backend",
+			"skills": [
+				"JavaScript",
+				"Express (still learning)",
+				"MongoDB",
+				"Bootstrap",
+				"NodeJs",
+				"Python",
+				"Java",
+				"JQuery",
+				"React (want to learn)"
+			]
+		}
+	]
 }
