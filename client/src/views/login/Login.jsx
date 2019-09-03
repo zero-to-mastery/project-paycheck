@@ -7,7 +7,6 @@ import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
-import blue from "@material-ui/core/colors/blue";
 
 const theme = createMuiTheme({
     palette: {
@@ -15,7 +14,6 @@ const theme = createMuiTheme({
     }
   }
 )
-
 const useStyles = makeStyles(theme => ({
     root: {
       flexGrow: 1,
@@ -31,13 +29,8 @@ const useStyles = makeStyles(theme => ({
     input:{
       marginRight:theme.spacing(10),
       marginTop: theme.spacing(2)
-    },
-
-    palette:{
- 
     }
   }));
-
 
 export default function Login(props) {
   const classes = useStyles();
@@ -68,10 +61,12 @@ export default function Login(props) {
               >
                 <TextField
                   placeholder="Email"
+                  type="email"
                   ></TextField>
 
                 <TextField
                   placeholder="Password"
+                  type="password"
                   ></TextField>
 
                 <Button variant="contained" color="primary" className={classes.button}>Sign in</Button>
@@ -79,7 +74,6 @@ export default function Login(props) {
                 <ThemeProvider theme={theme}>
                   <Button variant="contained" color="secondary" className={classes.button}>Sign in with Google</Button>
                 </ThemeProvider>
-              
 
               </Grid>
 
