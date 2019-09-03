@@ -52,7 +52,6 @@ export default function Login(props) {
                   <Typography variant="subtitle1" >Sign in or create an account</Typography>
 
               </Grid>
-
               <Grid
                 container
                 direction="column"
