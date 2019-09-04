@@ -205,6 +205,22 @@
 				"React",
 				"MySQL"
 			]
-		}
+		},
+		{
+      "discord-name": "gdreddy",
+      "trello-name": "dilipreddy8",
+      "notion.so": "dilip.gujju@gmail.com",
+      "desired-role": "Frontend",
+      "skills": [
+        "JavaScript",
+        "Bootstrap",
+        "Material UI",
+        "Ant Design",
+        "React",
+        "Express",
+        "MongoDB",
+        "NodeJs"
+      ]
+    }
 	]
 }
