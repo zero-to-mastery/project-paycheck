@@ -3,7 +3,7 @@ node_js:
   - "stable"
 cache:
   directories:
-  - ./client/node_modules
+  - /client/node_modules
 script:
   - npm run build
 deploy:
