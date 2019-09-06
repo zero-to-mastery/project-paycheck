@@ -232,6 +232,20 @@
         "Node",
         "MongoDB"
       ]
+    },
+    {
+      "discord-name": "Felipe David#0276",
+      "trello-name": "feelipedavid",
+      "desired-role": "Fullstack",
+      "skills": [
+        "Javascript",
+        "React",
+        "Redux",
+        "Express",
+        "Node",
+        "MongoDB",
+        "Linux"
+      ]
     }
 	]
 }
