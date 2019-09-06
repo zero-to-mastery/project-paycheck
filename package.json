@@ -2,6 +2,7 @@
   "name": "project_paycheck",
   "version": "1.0.0",
   "description": "a paycheck-to-paycheck breakdown of income and expenses",
+  "homepage": "https://zero-to-mastery.github.io/project-paycheck/",
   "main": "index.js",
   "engines": {
     "node": "11.14.0",
