@@ -10,6 +10,7 @@
   "scripts": {
     "start": "cd server && npm start",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "react-scripts build",
     "server": "cd server && npm start",
     "client": "cd client && npm start",
     "heroku-postbuild": "cd client && npm install && npm run build"
