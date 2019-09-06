@@ -5,7 +5,7 @@ cache:
   directories:
   - ./client/node_modules
 script:
-  - npm run heroku-postbuild
+  - npm run build
 deploy:
   provider: pages
   skip_cleanup: true
