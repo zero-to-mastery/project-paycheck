@@ -5,7 +5,7 @@ cache:
   directories:
   - node_modules
 script:
-  - cd client && npm install && npm run build
+  - cd client && npm install && CI=false npm run build
 deploy:
   provider: pages
   skip_cleanup: true
