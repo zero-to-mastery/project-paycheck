@@ -221,6 +221,17 @@
         "MongoDB",
         "NodeJs"
       ]
+    },
+    {
+      "discord-name": "caption01",
+      "trello-name": "nutchapon",
+      "desired-role": "back-end",
+      "skills": [
+        "Express",
+        "JavaScript",
+        "Node",
+        "MongoDB"
+      ]
     }
 	]
 }
