@@ -3,9 +3,9 @@ node_js:
   - "stable"
 cache:
   directories:
-  - /client/node_modules
+  - /node_modules
 script:
-  - cd client && npm run build
+  - cd client && npm install && npm run build
 deploy:
   provider: pages
   skip_cleanup: true
