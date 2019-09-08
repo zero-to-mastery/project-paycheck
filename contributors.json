@@ -246,6 +246,20 @@
         "MongoDB",
         "Linux"
       ]
+		},
+		{
+      "discord-name": "hmahajan#3388",
+      "trello-name": "Harshit M",
+      "desired-role": "Fullstack",
+      "skills": [
+        "Javascript",
+        "React",
+        "Redux",
+        "Express",
+        "Node",
+        "Postgres",
+        "Firebase"
+      ]
     }
 	]
 }
