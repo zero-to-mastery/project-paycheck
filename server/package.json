@@ -3,14 +3,17 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www",
-    "dev": "nodemon ./bin/www"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "dependencies": {
+    "body-parser": "^1.19.0",
     "cookie-parser": "~1.4.4",
-    "debug": "~2.6.9",
+    "cors": "^2.8.5",
     "express": "~4.16.1",
+    "faker": "^4.1.0",
     "helmet": "^3.18.0",
+    "moment": "^2.24.0",
     "mongoose": "^5.6.4",
     "morgan": "~1.9.1"
   },
