@@ -43,6 +43,14 @@ export default function MainAppBar(props) {
           >
             PAYCHECK
           </Button>
+          <Button
+            className={classes.menuButton}
+            color="inherit"
+            component={RouterLink}
+            to="/settings"
+          >
+            SETTINGS
+          </Button>
           <Button 
             className={classes.menuButton}
             color="inherit"
