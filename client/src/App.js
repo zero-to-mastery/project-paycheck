@@ -8,6 +8,7 @@ import Homepage from "./views/Homepage/Homepage";
 import PaycheckCard from "./views/paycheckCard/PaycheckCard";
 import FinancialCategoryPage from "views/financial-categories/pages/main";
 import Login from "./views/login/Login";
+import Settings from "./views/settings/form/Settings";
 
 // Component Imports
 import MainAppBar from "./components/MainAppBar/MainAppBar";
@@ -23,6 +24,7 @@ export default function App() {
         <Route exact path="/overview" component={FinancialCategoryPage} />
         <Route exact path="/paycheck" component={PaycheckCard} />
         <Route exact path="/login" component={Login} />
+        <Route exact path="/settings" component={Settings} />
       </Switch>
     </div>
   );
