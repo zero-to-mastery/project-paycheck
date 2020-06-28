@@ -265,6 +265,13 @@
       "trello-name": "Harshit M",
       "desired-role": "Fullstack",
       "skills": ["Javascript", "React", "Redux", "Express", "Node", "Postgres", "Firebase"]
-    }
+    },
+        {
+      "discord-name": "Alyy2212",
+      "trello-name": "alyhesham.alyh@gmail.com",
+      "desired-role": "Fullstack",
+      "skills": ["Javascript", "React", "Redux", "Express", "Node", "Postgres"]
+    },
+
   ]
 }
